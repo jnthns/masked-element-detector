@@ -1,4 +1,4 @@
-Amplitude Session Replay Masked Element Detector
+**Amplitude Session Replay Masked Element Detector**
 
 Install the extension:
 1. Download this repo as a ZIP
