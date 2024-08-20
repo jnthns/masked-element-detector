@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Highlight Amp Mask Elements",
+  "version": "1.1",
+  "description": "Automatically highlights elements containing 'amp-mask' class names and shows tooltips.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
