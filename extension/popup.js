@@ -5,7 +5,7 @@ document.getElementById('toggle-btn').addEventListener('click', () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         chrome.scripting.executeScript({
             target: { tabId: tabs[0].id },
-            function: toggleHighlighting,
+            function: togglePersistentHighlighting,
             args: [isActive]
         });
     });
@@ -13,13 +13,13 @@ document.getElementById('toggle-btn').addEventListener('click', () => {
     button.textContent = isActive ? 'Deactivate Highlighting' : 'Highlight amp-mask Elements';
 });
 
-function toggleHighlighting(isActive) {
+function togglePersistentHighlighting(isActive) {
     const elements = document.querySelectorAll('.amp-mask');
     elements.forEach(element => {
         if (isActive) {
-            element.style.border = '2px solid red';  // Apply red border
+            element.style.outline = '2px solid red';  // Apply red outline
         } else {
-            element.style.border = '';  // Remove border
+            element.style.outline = '';  // Remove outline
         }
     });
 }

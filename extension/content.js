@@ -19,12 +19,14 @@ function addHoverEffect() {
 
             // Event listener for mouseover
             element.addEventListener('mouseover', (event) => {
+                element.style.outline = '2px solid blue';  // Apply blue outline on hover
                 tooltip.style.visibility = 'visible';
                 positionTooltip(event, tooltip);
             });
 
             // Event listener for mouseout
             element.addEventListener('mouseout', () => {
+                element.style.outline = '';  // Remove outline
                 tooltip.style.visibility = 'hidden';
             });
 
