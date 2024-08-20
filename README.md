@@ -4,7 +4,7 @@
 1. Download this repo as a ZIP
 2. Go to chrome://extensions/ in your Chrome browser.
 3. Enable "Developer mode" in the top right corner.
-4. Click "Load unpacked" and select the downloaded ZIP.
+4. Click "Load unpacked" and select the extension folder in the uncompressed ZIP.
 
 **How to use the extension:**
 
